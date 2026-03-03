@@ -1,7 +1,5 @@
-import { platformBrowser } from '@angular/platform-browser';
-import { AppModule } from './app/app-module';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { ValidadorComponent } from './app/validador/validador.component';
 
-platformBrowser().bootstrapModule(AppModule, {
-  
-})
+bootstrapApplication(ValidadorComponent)
   .catch(err => console.error(err));

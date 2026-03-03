@@ -1,0 +1,14 @@
+<h2>Validador de Billetes Bolivia</h2>
+
+<input type="file"
+       accept="image/*"
+       capture="environment"
+       (change)="onFileSelected($event)" />
+
+<p *ngIf="procesando">
+  ⏳ Procesando...
+</p>
+
+<p *ngIf="mensaje && !procesando">
+  {{ mensaje }}
+</p>
